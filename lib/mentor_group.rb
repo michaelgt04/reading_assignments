@@ -21,6 +21,6 @@ class MentorGroup
     store.transaction do
       store["mentees"] = mentees
     end
-    return new_mentees
+    return mentees
   end
 end
