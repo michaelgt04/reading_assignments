@@ -14,6 +14,8 @@ module ReadingAssignments
 
   if !mentees
     mentees = MentorGroup.create_persisted_mentees(store)
+  else
+    mentees = MentorGroup.reset_mentees_option(store)
   end
 
   mentor_group = MentorGroup.new(mentees)

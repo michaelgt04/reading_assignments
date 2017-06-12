@@ -23,4 +23,12 @@ class MentorGroup
     end
     return mentees
   end
+
+  def self.reset_mentees_option(store)
+    puts 'Would you like to reset your group and input their names again?'
+    reset_choice = InputValidator.reset_mentees_input
+    if reset_choice == 'y'
+      mentees = self.create_persisted_mentees(store)
+    end
+  end
 end
