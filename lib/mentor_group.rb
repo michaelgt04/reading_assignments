@@ -12,7 +12,7 @@ class MentorGroup
   end
 
   def self.create_persisted_mentees(store)
-    puts 'What are the names of the people in your group (please separate by comma)?'
+    puts 'What are the names of the people in your group (please separate by a comma followed by a space)?'
     name_string = gets.chomp
     new_mentees = name_string.split(', ')
 
