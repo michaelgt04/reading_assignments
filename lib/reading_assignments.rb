@@ -1,6 +1,5 @@
 require "reading_assignments/version"
 require 'pry'
-require 'csv'
 require 'yaml/store'
 require_relative 'mentor_group'
 require_relative 'student'

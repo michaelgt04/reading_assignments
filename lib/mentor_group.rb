@@ -29,6 +29,8 @@ class MentorGroup
     reset_choice = InputValidator.reset_mentees_input
     if reset_choice == 'y'
       mentees = self.create_persisted_mentees(store)
+      return mentees
+    else
     end
   end
 end

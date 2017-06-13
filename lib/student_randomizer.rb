@@ -26,7 +26,12 @@ class StudentRandomizer
     articles.times do
       random_index = random_generator.rand(0...@group_size)
       student = chosen_student(random_index)
-      until !@chosen_students.include?(student)
+      binding.pry
+      while @chosen_students.include?(student)
+        binding.pry
+        if @chosen_students.length == articles
+          @chosen_students = []
+        end
         random_index = random_generator.rand(0...@group_size)
         student = chosen_student(random_index)
       end
