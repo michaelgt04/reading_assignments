@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["michaelgt04@gmail.com\n"]
 
   spec.summary       = "Assign Launch Readings"
-  spec.description   = "You can use this gem to assign your readings to your mentees"
-  spec.homepage      = "https://github.com/michaelgt04/debugging-clinic"
+  spec.description   = "You can use this gem to assign your readings to your mentees. You have multiple different ways to select the reading. It should make your morning a little easier!"
+  spec.homepage      = "https://github.com/michaelgt04/reading_assignments"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -16,7 +16,7 @@ $ gem install reading_assignments
 In order to use the reading_assignments gem, you simply have to run the command:
 
 ```
-reading_assignments
+$ reading_assignments
 ```
 
 This gem has an executable script, so you can run it from anywhere. Upon running
