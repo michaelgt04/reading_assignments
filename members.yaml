@@ -1,0 +1,8 @@
+---
+mentees:
+- !ruby/object:Student
+  name: Mike
+- !ruby/object:Student
+  name: Greg
+- !ruby/object:Student
+  name: Tori

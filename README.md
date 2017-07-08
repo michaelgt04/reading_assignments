@@ -1,38 +1,40 @@
-# ReadingAssignments
+# Reading Assignments Gem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/reading_assignments`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem allows you to assign your readings to your mentees. As an Experience
+Engineer at Launch, I'd find myself spending unnecessary energy assigning 
+students to readings in the morning. Instead of having to choose people every
+morning, I wanted a tool to automate the process and just make my morning a
+_little_ bit easier.
 
 ## Installation
+You can install the gem simply by executing the command:
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'reading_assignments'
+```
+$ gem install reading_assignments
 ```
 
-And then execute:
+In order to use the reading_assignments gem, you simply have to run the command:
 
-    $ bundle
+```
+reading_assignments
+```
 
-Or install it yourself as:
+This gem has an executable script, so you can run it from anywhere. Upon running
+this command, you'll be asked to setup your group and given three options on
+how to randomize your selection: 
 
-    $ gem install reading_assignments
+* Number: uses this number to seed the random generator
+* String: converts the string to a number and uses that as the seed
+* Random: no seed number, just uses the random generator
 
-## Usage
+Following that you will be asked how many articles you need to assign and you
+should be able to see your assignments!
 
-TODO: Write usage instructions here
+Upon using the gem again, you'll have the option to keep your group as is, or
+to create a new group to select from. This will be especially useful for EEs who
+cover multiple mentor groups.
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/reading_assignments.
+Enjoy and hopefully this will make your morning just a little bit easier!
 
 ## License
 
